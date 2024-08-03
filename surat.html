@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="./surat.css">
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>For Keyla.</strong>
+                        <p>
+                            Terima kasih udah mau berteman sama aku sampai sekarang, sebelum ada kamu hidup aku tidak
+                            berwarna dan aku kehilangan arah. tapi setelah adanya kamu, kehidupan aku langsung berubah.       <br>
+                            <img src="web1.jpg" width="60px" height="50px">
+                            <img src="web2.jpg" width="70px" height="50px">
+                            <audio hidden autoplay loop>
+                                <audio controls autoplay src="projek.mp3"controls></audio>
+                                </audio>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+</html>
